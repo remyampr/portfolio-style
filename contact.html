@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Portfolio page and Projects" />
+        <meta name="author" content="Remya P R" />
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav aria-label=" main menu">
+                <ul>
+                    <li><a href="index.html" rel="homepage">Home</a></li>
+                    <li><a href="index.html#about" rel="aboutpage">About Me</a></li>
+                    <li><a href="project.html" rel="projectpage">Project</a></li>
+                    <li><a href="#" rel="contactpage">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main-contact-container">
+                <h1>Let's Connect!</h1>
+
+                <form action="index.html" method="post" autocomplete="on" title="contact form" aria-label="user details">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+
+                        <div class="form-container">
+                            <div class="input-name">
+                                <label for="name">Namae:</label>
+                                <input type="text" id="name" placeholder="Enter your name" required name="name" />
+                            </div>
+                            <div class="input-email">
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email id" required />
+                            </div>
+                            <div class="input-phone">
+                                <label for="phone">Phone Number:</label>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="Enter your phone number"
+                                    pattern="[0-9]{10}"
+                                    required
+                                />
+                            </div>
+                            <div class="input-password">
+                                <label for="password">Password:</label>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    placeholder="Enter password"
+                                    required
+                                />
+                            </div>
+                            <div class="input-dob">
+                                <label for="dob">Date of birth:</label>
+                                <input type="date" name="dob" id="dob" required />
+                            </div>
+                            <div class="input-education">
+                                <label for="education">Education:</label>
+                                <select name="education" id="education">
+                                    <option value="select">select</option>
+                                    <optgroup label="undergraduate">
+                                        <option value="bachelor">Bachelor</option>
+                                    </optgroup>
+                                    <optgroup label="postgraduate">
+                                        <option value="master">Master</option>
+                                        <option value="phd">Doctorate (PhD)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="input-gender">
+                                <label>Gender:</label>
+                                <input type="radio" name="gender" id="male" value="male" />
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female" checked />
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="other" value="other" />
+                                <label for="other">Other</label>
+                            </div>
+
+                            <div class="input-aboutus">
+                                <label>How did you hear about us : </label>
+                                <input type="checkbox" name="insta" id="insta" />
+                                <label for="insta">Instagram</label>
+                                <input type="checkbox" name="youtube" id="youtube" />
+                                <label for="youtube">Youtube</label>
+                                <input type="checkbox" name="fb" id="fb" />
+                                <label for="fb">Facebook</label>
+                            </div>
+                            <div class="input-msg">
+                                <label for="msg">Any message for us?</label>
+                                <textarea name="msg" id="msg" rows="4" placeholder="write your message"></textarea>
+                            </div>
+
+                            <div class="input-button">
+                                <!-- <label>Click for submit:</label> -->
+                                <input type="submit" value="Submit" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            &copy; All rights reserved
+            <p>Published on <time datetime="2024-11-11">2024</time>.</p>
+            <address>place:Thrissur phone number:00236541</address>
+        </footer>
+    </body>
+</html>
